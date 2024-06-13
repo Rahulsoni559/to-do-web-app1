@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced To-Do App</title>
+    <link rel="stylesheet" href="tdcss/tda.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do WEB APP</h1>
+        <div class="new-task">
+            <input type="text" id="taskInput" placeholder="Task Title...">
+            <select id="taskCategory">
+                <option value="" disabled selected>Choose Category</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Shopping">Shopping</option>
+            </select>
+            <textarea id="taskNotes" placeholder="Add notes..."></textarea>
+            <input type="datetime-local" id="taskDateTime">
+            <input type="datetime-local" id="taskReminder">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="td.js/tda.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4c3;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #558b2f;
+}
+
+.new-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#taskInput, #taskCategory, #taskDateTime, #taskReminder, #taskNotes {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #558b2f;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#addTaskBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #558b2f;
+    color: #fff;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e8f5e9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border-left: 5px solid #558b2f;
+}
+
+.task-item.complete {
+    text-decoration: line-through;
+    background-color: #a5d6a7;
+}
+
+.task-item .category {
+    font-weight: bold;
+    color: #388e3c;
+}
+
+.task-item .notes {
+    background-color: #fff3e0;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.task-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.task-actions button.edit {
+    color: #0288d1;
+}
+
+.task-actions button.complete {
+    color: #388e3c;
+}
+
+.task-actions button.delete {
+    color: #d32f2f;
+}
